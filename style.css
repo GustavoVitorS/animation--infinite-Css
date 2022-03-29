@@ -1,0 +1,38 @@
+*{  
+  background: rgb(233, 106, 205);
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 80, 217);
+  animation: squareToCircle 2s 1s infinite alternate;
+}
+
+@keyframes squareToCircle {
+    0% {
+      border-radius: 0 0 0 0;
+      background: rgb(255, 80, 217);
+      transform: rotate(0deg);
+    }
+    25% {
+      border-radius: 50% 0 0 0;
+      background: rgb(179, 122, 233);
+      transform: rotate(45deg);
+    }
+    50% {
+      border-radius: 50% 50% 0 0;
+      background: rgb(92, 205, 205);
+      transform: rotate(90deg);
+    }
+    75% {
+      border-radius: 50% 50% 50% 0;
+      background: rgb(52, 30, 105);
+      transform: rotate(135deg);
+    }
+    100% {
+      border-radius: 50% 50% 50% 50%;
+      background: rgb(233, 122, 233);
+      transform: rotate(180deg);
+    }
+}
